@@ -1,0 +1,104 @@
+body {
+    height: 100%;
+    font-family: $font-normal;
+    font-size: $font-medium;
+    color: $primary;
+    width: 100%;
+
+    h1, h2, h3, h4 {
+        font-family: $font-heading;
+        font-weight: 700;
+    }
+
+    .wp-post-image {
+        width: 90%;
+        height: auto;
+    }
+
+    .subs-form {
+        input[type="radio"] {
+            opacity: 0;
+            position: fixed;
+            width: 0;
+        }
+
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            font-family: sans-serif, Arial;
+            font-size: 16px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 2px;
+        }
+
+        input[type="radio"]:checked + label {
+            background-color:#000;
+            color: #FFF;
+        }
+
+        button {
+            background: #000000;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            border-radius: 2px;
+            color: #FFF;
+        }
+        
+    }    
+
+    div {
+        text-align: center;
+
+        #sidebar-primary {
+            padding-left: .5rem;
+            margin-left: .5rem;
+            float: right;
+            top: 25vh;
+            right: .5rem;
+            position: fixed;
+            display: none;
+            z-index: 0;
+            visibility:hidden;
+            @media (min-width: $break-large) {
+                visibility: collapse;
+                display: block;
+            }
+            @media (min-width: $break-xlarge) {
+                right: 4rem;
+            }
+        }
+        
+        #content {
+            position: inherit;
+            width: 100%;
+            min-height: 70vh;
+            
+            background: #9cdcf8;
+            background: -webkit-linear-gradient(#9cdcf8, white, #9cdcf8);
+            background: -o-linear-gradient(#9cdcf8, white, #9cdcf8);
+            background: -moz-linear-gradient(#9cdcf8, white, #9cdcf8);
+            background: linear-gradient(#9cdcf8, white, #9cdcf8);
+            overflow: auto;
+            @media (min-width: $break-large) {
+                padding-right: 30%;
+            }
+        }
+
+        .front-page {
+            position: inherit;
+            width: 100%;
+            color: $primary;
+
+            img {
+                width: 45%;
+                @media (min-width: $break-large) {
+                    width: 80%;
+                }
+            }
+        }
+    }    
+
+}
+
+  

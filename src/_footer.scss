@@ -1,0 +1,43 @@
+footer {
+
+    @media (min-width: $break-large) {
+        position: relative;
+        height: auto;
+        clear:both;
+        padding-top:20px; 
+    }
+
+    margin-top: 0px;
+    height: auto;
+    background-color: $light;
+    width: 100%;
+
+    .widget {
+        margin-top: 10px;
+
+        a {
+            color: $primary;
+            font-size: $font-medium;
+            @media screen and (min-width: $break-large) {
+                font-size: $font-medium;
+            }
+        }
+
+        .fab {
+            font-size: $font-large;
+        }
+    }
+
+    div {
+        .stripe {
+            height: 33px;
+            line-height: 33px;
+            width: auto;
+        }
+    }
+
+    .copyright-text {
+        font-size: $font-small;
+        margin-bottom: 1rem;
+    }
+}
