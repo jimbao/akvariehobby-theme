@@ -15,6 +15,12 @@ body {
         height: auto;
     }
 
+    .wp-block-image {
+        img {
+            height: auto;
+        }
+    }
+
     .subs-form {
         input[type="radio"] {
             opacity: 0;
