@@ -14,6 +14,13 @@ body {
         width: 90%;
         height: auto;
     }
+    
+    .wp-block-file {
+        .wp-block-file__button {
+            background: $primary;
+            white-space: nowrap;
+        }
+    }
 
     .wp-block-image {
         img {

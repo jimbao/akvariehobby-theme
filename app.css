@@ -10117,6 +10117,10 @@ body .wp-post-image {
   width: 90%;
   height: auto;
 }
+body .wp-block-file .wp-block-file__button {
+  background: #0036FF;
+  white-space: nowrap;
+}
 body .wp-block-image img {
   height: auto;
 }
